@@ -1,6 +1,6 @@
 #Quicksort
 
-This is a Ruby implementation of the in-place quicksort algorithm.
+This is a Ruby implementation of the in-place quicksort algorithm. Array is sorted in `O(nlogn)` time with `O(1)` memory utilization.
 
 ## Algorithm
 
