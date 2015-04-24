@@ -1,5 +1,5 @@
 class Array
-  def quicksort(min_idx = 0, max_idx = length - 1)
+  def quicksort!(min_idx = 0, max_idx = length - 1)
     return if min_idx > max_idx
 
     pivot_idx = (min_idx + max_idx) / 2
