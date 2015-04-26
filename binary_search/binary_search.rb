@@ -1,4 +1,8 @@
 class Array
+  def binary_search(value)
+    binary_search_iterative(value)
+  end
+
   def binary_search_iterative(value)
     low = 0
     high = self.length - 1
