@@ -18,8 +18,19 @@ class Array
     nil
   end
 
-end
+  def binary_search_recursive(value)
+    return nil if self.length < 1
 
-array = (1..10).to_a
-p array
-puts array.binary_search_iterative(5)
+    mid = length / 2
+    case value <=> self[mid]
+    when -1
+      return self[0...mid].binary_search_recursive(value)
+    when 0
+      return mid
+    when 1
+      return mid + self[mid + 1..-1].binary_search_recursive(value) + 1
+    end
+
+    nil
+  end
+end
