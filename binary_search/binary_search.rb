@@ -9,7 +9,6 @@ class Array
 
     while low <= high
       mid = (low + high) / 2
-      puts mid
       if value < self[mid]
         high = mid - 1
       elsif value > self[mid]
